@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
+    <title>BINARY | SIGN UP</title>
+
+</head>
+
+<body>
+
+    <form class="container-xl p-4 pt-5 shadow p-3 mb-5 bg-body rounded" style="width: 35%; margin-top: 85px;" th:action="@{/register_user}" method="post" th:object="${user}">
+        <h2>Sign Up - Create User</h2>
+        <h3 class="mb-4 fs-6">Already have an account? <a th:href="@{/}" class="text-primary" style="text-decoration: none;">Sign in</a></h3>
+
+        <div class="messages">
+            
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="userName" name="userName" placeholder="name@example.com" th:field="*{userName}" required>
+            <label for="userName">User Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" th:field="*{email}" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" th:field="*{password}" required>
+            <label for="password">Password</label>
+        </div>
+
+        <div class="mb-3 mt-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">I agree to the <span class="text-primary">Terms of Services</span> and <span class="text-primary">Privacy Policy</span></label>
+        </div>
+
+        <button type="submit" class="btn btn-primary shadow" style="width: 75%; margin-left: 55px; height: 3rem;">Sign Up</button>
+    </form>
+
+    <script src="bootstrap-5.0.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

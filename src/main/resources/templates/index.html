@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/binary.jpg">
+    <link rel="stylesheet" href="fontawesome-5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
+    <title>BINARY | HOME</title>
+</head>
+<body>
+    <div class="containerx">
+        <img src="images/airline.png" alt="Airplane Sunset">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><h2 class="text-white">BINARY</h2></a>
+
+                <div class="d-grid gap-2 d-md-flex float-end">
+                    <button class="btn btn-outline-light" type="submit">Log In</button>
+                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bloc">
+            <div class="text-bloc">
+                Reservations made <span class="text-blue">simple </span> with <span class="text-blue">BINARY</span>
+            </div>
+
+            <div class="form-bloc">
+                <div class="content">
+                    <header>Hi, <span class="text-blue">Where</span> would you like to go?</header>
+
+                    <form class="options" action="">
+                        <div class="form-check option1">
+                            <input class="form-check-input" type="radio" id="roundTrip" name="trip" value="roundTrip" checked>
+                            <label class="form-check-label" for="roundTrip">
+                                Round trip
+                            </label>
+                        </div>
+
+                        <div class="form-check option1">
+                            <input class="form-check-input" type="radio" id="oneWay" name="trip" value="oneWay">
+                            <label class="form-check-label" for="roundTrip">
+                                One way
+                            </label>
+                        </div>
+                        
+                        <div class="form-check option1">
+                            <input class="form-check-input" type="radio" id="multiCity" name="trip" value="multiCity">
+                            <label class="form-check-label" for="roundTrip">
+                                Multi city
+                            </label>
+                        </div>
+                    </form>
+
+                    <div class="option-1 roundTrip optionTrip">
+                        <div class="flex">
+
+                            <div class="w-100 space-infront-25">
+                                <div class="select-header">
+                                    <span class="title-float">FROM</span>
+                                    <input type="text" placeholder="Yaounde" class="selected">
+                                    <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <div class="option">Yaounde, Cameroon</div>
+                                    <div class="option">Copenhagen, Denmark</div>
+                                    <div class="option">N'Djamena, Chad</div>
+                                    <div class="option">New York City, New York</div>
+                                    <div class="option">Paris, France</div>
+                                    <div class="option">Lagos, Nigeria</div>
+                                    <div class="option">Berlin, Germany</div>
+                                    <div class="option">Conakry, Guinea</div>
+                                    <div class="option">Tokyo, Japan</div>
+                                </div>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="select-header">
+                                    <span class="title-float">TO</span>
+                                    <input type="text" placeholder="New York City" class="selected">
+                                    <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <div class="option">Yaounde, Cameroon</div>
+                                    <div class="option">Copenhagen, Denmark</div>
+                                    <div class="option">N'Djamena, Chad</div>
+                                    <div class="option">New York City, New York</div>
+                                    <div class="option">Paris, France</div>
+                                    <div class="option">Lagos, Nigeria</div>
+                                    <div class="option">Berlin, Germany</div>
+                                    <div class="option">Conakry, Guinea</div>
+                                    <div class="option">Tokyo, Japan</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex">
+                            <div class="select-header space-infront-25">
+                                <span class="title-float">DEPATURE DATE</span>
+                                <input type="date" placeholder="">
+                            </div>
+
+                            <div class="select-header">
+                                <span class="title-float">RETURN DATE</span>
+                                <input type="date" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="select-header">
+                            <span class="title-float">PASSENGERS</span>
+                            <input type="text" placeholder="2 Adults, 1 child, 1 Infant, 1 Old Personne">
+                            <i class="fas fa-users"></i>
+                        </div>
+
+                        <div class="w-100">
+                            <div class="select-header">
+                                <span class="title-float">CLASS</span>
+                                <input type="text" placeholder="Select a Class" class="selected">
+                                <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                            </div>
+
+                            <div class="select-options" style="display: none;">
+                                <div class="option">First Class</div>
+                                <div class="option">Economic Class</div>
+                                <div class="option">Business Class</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="option-2 oneWay optionTrip" style="display: none;">
+                        <div class="flex">
+
+                            <div class="w-100 space-infront-25">
+                                <div class="select-header">
+                                    <span class="title-float">FROM</span>
+                                    <input type="text" placeholder="Yaounde" class="selected">
+                                    <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <div class="option">Yaounde, Cameroon</div>
+                                    <div class="option">Copenhagen, Denmark</div>
+                                    <div class="option">N'Djamena, Chad</div>
+                                    <div class="option">New York City, New York</div>
+                                    <div class="option">Paris, France</div>
+                                    <div class="option">Lagos, Nigeria</div>
+                                    <div class="option">Berlin, Germany</div>
+                                    <div class="option">Conakry, Guinea</div>
+                                    <div class="option">Tokyo, Japan</div>
+                                </div>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="select-header">
+                                    <span class="title-float">TO</span>
+                                    <input type="text" placeholder="New York City" class="selected">
+                                    <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <div class="option">Yaounde, Cameroon</div>
+                                    <div class="option">Copenhagen, Denmark</div>
+                                    <div class="option">N'Djamena, Chad</div>
+                                    <div class="option">New York City, New York</div>
+                                    <div class="option">Paris, France</div>
+                                    <div class="option">Lagos, Nigeria</div>
+                                    <div class="option">Berlin, Germany</div>
+                                    <div class="option">Conakry, Guinea</div>
+                                    <div class="option">Tokyo, Japan</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="select-header">
+                            <span class="title-float">DEPATURE DATE</span>
+                            <input type="date" placeholder="">
+                        </div>
+
+                        <div class="select-header">
+                            <span class="title-float">PASSENGERS</span>
+                            <input type="text" placeholder="2 Adults, 1 child, 1 Infant, 1 Old Personne">
+                            <i class="fas fa-users"></i>
+                        </div>
+
+                        <div class="class">
+                            <div class="select-header">
+                                <span class="title-float">CLASS</span>
+                                <input type="text" placeholder="Select a Class" class="selected">
+                                <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                            </div>
+
+                            <div class="class-options">
+                                <div class="option">First Class</div>
+                                <div class="option">Economic Class</div>
+                                <div class="option">Business Class</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="option-3 multiCity optionTrip" style="overflow-y: auto; height: 360px;display: none;">
+                        <div class="flex">
+
+                            <div class="w-100 space-infront-25">
+                                <div class="select-header">
+                                    <span class="title-float">FROM</span>
+                                    <input type="text" placeholder="Yaounde" class="selected">
+                                    <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <div class="option">Yaounde, Cameroon</div>
+                                    <div class="option">Copenhagen, Denmark</div>
+                                    <div class="option">N'Djamena, Chad</div>
+                                    <div class="option">New York City, New York</div>
+                                    <div class="option">Paris, France</div>
+                                    <div class="option">Lagos, Nigeria</div>
+                                    <div class="option">Berlin, Germany</div>
+                                    <div class="option">Conakry, Guinea</div>
+                                    <div class="option">Tokyo, Japan</div>
+                                </div>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="select-header">
+                                    <span class="title-float">TO</span>
+                                    <input type="text" placeholder="New York City" class="selected">
+                                    <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <div class="option">Yaounde, Cameroon</div>
+                                    <div class="option">Copenhagen, Denmark</div>
+                                    <div class="option">N'Djamena, Chad</div>
+                                    <div class="option">New York City, New York</div>
+                                    <div class="option">Paris, France</div>
+                                    <div class="option">Lagos, Nigeria</div>
+                                    <div class="option">Berlin, Germany</div>
+                                    <div class="option">Conakry, Guinea</div>
+                                    <div class="option">Tokyo, Japan</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex">
+                            <div class="select-header space-infront-25">
+                                <span class="title-float">DEPATURE DATE</span>
+                                <input type="date" placeholder="">
+                            </div>
+
+                            <div class="select-header">
+                                <span class="title-float">RETURN DATE</span>
+                                <input type="date" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="flex">
+
+                            <div class="w-100 space-infront-25">
+                                <div class="select-header">
+                                    <span class="title-float">FROM</span>
+                                    <input type="text" placeholder="Yaounde" class="selected">
+                                    <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <div class="option">Yaounde, Cameroon</div>
+                                    <div class="option">Copenhagen, Denmark</div>
+                                    <div class="option">N'Djamena, Chad</div>
+                                    <div class="option">New York City, New York</div>
+                                    <div class="option">Paris, France</div>
+                                    <div class="option">Lagos, Nigeria</div>
+                                    <div class="option">Berlin, Germany</div>
+                                    <div class="option">Conakry, Guinea</div>
+                                    <div class="option">Tokyo, Japan</div>
+                                </div>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="select-header">
+                                    <span class="title-float">TO</span>
+                                    <input type="text" placeholder="New York City" class="selected">
+                                    <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <div class="option">Yaounde, Cameroon</div>
+                                    <div class="option">Copenhagen, Denmark</div>
+                                    <div class="option">N'Djamena, Chad</div>
+                                    <div class="option">New York City, New York</div>
+                                    <div class="option">Paris, France</div>
+                                    <div class="option">Lagos, Nigeria</div>
+                                    <div class="option">Berlin, Germany</div>
+                                    <div class="option">Conakry, Guinea</div>
+                                    <div class="option">Tokyo, Japan</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex">
+                            <div class="select-header space-infront-25">
+                                <span class="title-float">DEPATURE DATE</span>
+                                <input type="date" placeholder="">
+                            </div>
+
+                            <div class="select-header">
+                                <span class="title-float">RETURN DATE</span>
+                                <input type="date" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="select-header">
+                            <span class="title-float">PASSENGERS</span>
+                            <input type="text" placeholder="2 Adults, 1 child, 1 Infant, 1 Old Personne">
+                            <i class="fas fa-users"></i>
+                        </div>
+
+                        <div class="class">
+                            <div class="select-header">
+                                <span class="title-float">CLASS</span>
+                                <input type="text" placeholder="Select a Class" class="selected">
+                                <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
+                            </div>
+
+                            <div class="class-options">
+                                <div class="option">First Class</div>
+                                <div class="option">Economic Class</div>
+                                <div class="option">Business Class</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-search">Search Flight</button>
+
+                    <!-- <span>Reservations</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
