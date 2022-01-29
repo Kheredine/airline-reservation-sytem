@@ -54,6 +54,14 @@ classes.forEach(classe => {
     });
 })
 
+function display() {
+    let inputs = document.querySelectorAll(".input");
+
+    inputs.forEach(input => {
+        console.log(input);
+    })
+}
+
 
 //address, countries, phone number visa card number and name, sex, marital status, no more password for simple users.
 /* he should not be able to enter your application through the browser

@@ -5,8 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+/* import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne; */
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -35,7 +35,34 @@ public class Country {
     @Column(name = "capital", nullable = false, length = 45)
     private String capital;
 
-    @OneToOne
-    @JoinColumn(name = "airport_id", insertable = false, updatable = false)
-    private Airport airport;
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getCapital() {
+        return capital;
+    }
+
+    public void setCapital(String capital) {
+        this.capital = capital;
+    }
+
+    /*
+     * @OneToOne
+     * 
+     * @JoinColumn(name = "airport_id", insertable = false, updatable = false)
+     * private Airport airport;
+     */
 }

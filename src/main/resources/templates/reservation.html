@@ -33,9 +33,12 @@
 
         <div class="card width-65 m-auto">
 
-            <div class="card-header bg-primary text-white text-center">
-                <h4 class="font-size-14 lh-1">One Way Trip</h4>
-                <h6 class="font-size-16 lh-1">Douala (DLA) to New York (JFK)</h6>
+            <div class="card-header bg-primary text-white align-items-center">
+                <h4 class="font-size-18 lh-1 mt-1" style="display: inline-block;">Reservations</h4>
+
+                <div class="float-lg-end">
+                    <a th:href="@{/home}"><button class="btn btn-outline-light" type="submit">New reservation</button></a>
+                </div>
             </div>
 
             <table class="table table-bordered text-center">
@@ -46,11 +49,11 @@
                         <th>Duration</th>
                         <th>Arrival</th>
                         <th>Price</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
             </table>
 
-            <a th:href="@{/reservation}" style="text-decoration: none;" class="text-dark">
             <div class="card-body flex text-center align-items-center mt-3 border border-1" style="cursor: pointer;">
 
             <div class="width-20 align-content-center airline">
@@ -77,7 +80,13 @@
                 1,500,000frs
             </div>
 
-            </div></a>
+            <div class="width-20 align-content-center price font-size-16">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Delete
+                </button>
+            </div>
+
+            </div>
 
             <div class="card-body flex text-center align-items-center mt-3 border border-1">
 
@@ -105,10 +114,36 @@
                     2,500,000frs
                 </div>
 
+                <div class="width-20 align-content-center price font-size-16">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Delete
+                    </button>
+                </div>
+
             </div>
 
         </div><!-- card -->
 
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete Reservation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Do you really want to delete
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+            </div>
+        </div>
     </div>
 
     <script src="bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>

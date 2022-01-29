@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,8 +19,15 @@
                 <a class="navbar-brand" href="#"><h2 class="text-white">BINARY</h2></a>
 
                 <div class="d-grid gap-2 d-md-flex float-end">
-                    <button class="btn btn-outline-light" type="submit">Log In</button>
-                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Henry
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" th:href="@{/logout}">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -68,15 +75,7 @@
                                 </div>
 
                                 <div class="select-options">
-                                    <div class="option">Yaounde, Cameroon</div>
-                                    <div class="option">Copenhagen, Denmark</div>
-                                    <div class="option">N'Djamena, Chad</div>
-                                    <div class="option">New York City, New York</div>
-                                    <div class="option">Paris, France</div>
-                                    <div class="option">Lagos, Nigeria</div>
-                                    <div class="option">Berlin, Germany</div>
-                                    <div class="option">Conakry, Guinea</div>
-                                    <div class="option">Tokyo, Japan</div>
+                                    <div class="option" th:each="country:${countries}" th:text="${country.capital}"></div>
                                 </div>
                             </div>
 
@@ -87,16 +86,8 @@
                                     <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
                                 </div>
 
-                                <div class="select-options">
-                                    <div class="option">Yaounde, Cameroon</div>
-                                    <div class="option">Copenhagen, Denmark</div>
-                                    <div class="option">N'Djamena, Chad</div>
-                                    <div class="option">New York City, New York</div>
-                                    <div class="option">Paris, France</div>
-                                    <div class="option">Lagos, Nigeria</div>
-                                    <div class="option">Berlin, Germany</div>
-                                    <div class="option">Conakry, Guinea</div>
-                                    <div class="option">Tokyo, Japan</div>
+                                 <div class="select-options">
+                                    <div class="option" th:each="country:${countries}" th:text="${country.capital}"></div>
                                 </div>
                             </div>
 
@@ -116,7 +107,7 @@
 
                         <div class="select-header">
                             <span class="title-float">PASSENGERS</span>
-                            <input type="text" placeholder="2 Adults, 1 child, 1 Infant, 1 Old Personne">
+                            <input type="number" placeholder="No of passengers">
                             <i class="fas fa-users"></i>
                         </div>
 
@@ -127,7 +118,7 @@
                                 <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
                             </div>
 
-                            <div class="select-options" style="display: none;">
+                            <div class="select-options">
                                 <div class="option">First Class</div>
                                 <div class="option">Economic Class</div>
                                 <div class="option">Business Class</div>
@@ -145,16 +136,8 @@
                                     <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
                                 </div>
 
-                                <div class="select-options">
-                                    <div class="option">Yaounde, Cameroon</div>
-                                    <div class="option">Copenhagen, Denmark</div>
-                                    <div class="option">N'Djamena, Chad</div>
-                                    <div class="option">New York City, New York</div>
-                                    <div class="option">Paris, France</div>
-                                    <div class="option">Lagos, Nigeria</div>
-                                    <div class="option">Berlin, Germany</div>
-                                    <div class="option">Conakry, Guinea</div>
-                                    <div class="option">Tokyo, Japan</div>
+                                 <div class="select-options">
+                                    <div class="option" th:each="country:${countries}" th:text="${country.capital}"></div>
                                 </div>
                             </div>
 
@@ -165,16 +148,8 @@
                                     <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
                                 </div>
 
-                                <div class="select-options">
-                                    <div class="option">Yaounde, Cameroon</div>
-                                    <div class="option">Copenhagen, Denmark</div>
-                                    <div class="option">N'Djamena, Chad</div>
-                                    <div class="option">New York City, New York</div>
-                                    <div class="option">Paris, France</div>
-                                    <div class="option">Lagos, Nigeria</div>
-                                    <div class="option">Berlin, Germany</div>
-                                    <div class="option">Conakry, Guinea</div>
-                                    <div class="option">Tokyo, Japan</div>
+                                 <div class="select-options">
+                                    <div class="option" th:each="country:${countries}" th:text="${country.capital}"></div>
                                 </div>
                             </div>
 
@@ -187,7 +162,7 @@
 
                         <div class="select-header">
                             <span class="title-float">PASSENGERS</span>
-                            <input type="text" placeholder="2 Adults, 1 child, 1 Infant, 1 Old Personne">
+                            <input type="number" placeholder="No of passengers">
                             <i class="fas fa-users"></i>
                         </div>
 
@@ -216,16 +191,8 @@
                                     <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
                                 </div>
 
-                                <div class="select-options">
-                                    <div class="option">Yaounde, Cameroon</div>
-                                    <div class="option">Copenhagen, Denmark</div>
-                                    <div class="option">N'Djamena, Chad</div>
-                                    <div class="option">New York City, New York</div>
-                                    <div class="option">Paris, France</div>
-                                    <div class="option">Lagos, Nigeria</div>
-                                    <div class="option">Berlin, Germany</div>
-                                    <div class="option">Conakry, Guinea</div>
-                                    <div class="option">Tokyo, Japan</div>
+                                 <div class="select-options">
+                                    <div class="option" th:each="country:${countries}" th:text="${country.capital}"></div>
                                 </div>
                             </div>
 
@@ -236,16 +203,8 @@
                                     <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
                                 </div>
 
-                                <div class="select-options">
-                                    <div class="option">Yaounde, Cameroon</div>
-                                    <div class="option">Copenhagen, Denmark</div>
-                                    <div class="option">N'Djamena, Chad</div>
-                                    <div class="option">New York City, New York</div>
-                                    <div class="option">Paris, France</div>
-                                    <div class="option">Lagos, Nigeria</div>
-                                    <div class="option">Berlin, Germany</div>
-                                    <div class="option">Conakry, Guinea</div>
-                                    <div class="option">Tokyo, Japan</div>
+                                 <div class="select-options">
+                                    <div class="option" th:each="country:${countries}" th:text="${country.capital}"></div>
                                 </div>
                             </div>
 
@@ -272,16 +231,8 @@
                                     <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
                                 </div>
 
-                                <div class="select-options">
-                                    <div class="option">Yaounde, Cameroon</div>
-                                    <div class="option">Copenhagen, Denmark</div>
-                                    <div class="option">N'Djamena, Chad</div>
-                                    <div class="option">New York City, New York</div>
-                                    <div class="option">Paris, France</div>
-                                    <div class="option">Lagos, Nigeria</div>
-                                    <div class="option">Berlin, Germany</div>
-                                    <div class="option">Conakry, Guinea</div>
-                                    <div class="option">Tokyo, Japan</div>
+                                 <div class="select-options">
+                                    <div class="option" th:each="country:${countries}" th:text="${country.capital}"></div>
                                 </div>
                             </div>
 
@@ -292,16 +243,8 @@
                                     <i class="fas fa-plane-departure"></i><i class="fas fa-times-circle" style="display: none;"></i>
                                 </div>
 
-                                <div class="select-options">
-                                    <div class="option">Yaounde, Cameroon</div>
-                                    <div class="option">Copenhagen, Denmark</div>
-                                    <div class="option">N'Djamena, Chad</div>
-                                    <div class="option">New York City, New York</div>
-                                    <div class="option">Paris, France</div>
-                                    <div class="option">Lagos, Nigeria</div>
-                                    <div class="option">Berlin, Germany</div>
-                                    <div class="option">Conakry, Guinea</div>
-                                    <div class="option">Tokyo, Japan</div>
+                                 <div class="select-options">
+                                    <div class="option" th:each="country:${countries}" th:text="${country.capital}"></div>
                                 </div>
                             </div>
 
@@ -321,7 +264,7 @@
 
                         <div class="select-header">
                             <span class="title-float">PASSENGERS</span>
-                            <input type="text" placeholder="2 Adults, 1 child, 1 Infant, 1 Old Personne">
+                            <input type="number" placeholder="No of passengers">
                             <i class="fas fa-users"></i>
                         </div>
 

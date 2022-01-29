@@ -22,6 +22,11 @@ public class AppController {
         return "signIn";
     }
 
+    @GetMapping("/logout")
+    public String logoutPage() {
+        return "signIn";
+    }
+
     @GetMapping("/signUp")
     public String signUpPage() {
         return "signUp";
@@ -32,9 +37,9 @@ public class AppController {
         return "flight";
     }
 
-    @GetMapping("/home")
-    public String homePage() {
-        return "index";
+    @GetMapping("/reservation")
+    public String reservationPage() {
+        return "reservation";
     }
 
     /*
